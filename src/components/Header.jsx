@@ -1,11 +1,14 @@
 import { navLinks } from "@/libs/constants";
 import ListItem from "./ListItem";
 import Link from "next/link";
+// import { BiArrowToBottom } from "react-icons/bi";
+import { MdOutlineShoppingBag } from "react-icons/md";
 
 export const Header = () => {
   return (
     <nav className="navbar">
       <div className="logo-container">
+        <MdOutlineShoppingBag size={20} />
         <Link className="logo" href={"/"}>
           EasyBuy
         </Link>

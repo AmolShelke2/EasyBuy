@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-200 h-full w-full;
+  @apply bg-gray-200 text-gray-500 h-full w-full;
 }
 
 .main-content {
@@ -14,8 +14,12 @@ body {
   @apply flex justify-between py-4;
 }
 
+.logo-container {
+  @apply flex items-center gap-1 cursor-pointer;
+}
+
 .navbar .logo {
-  @apply text-xl font-semibold tracking-wide cursor-pointer;
+  @apply text-xl font-semibold tracking-wide text-gray-700;
 }
 
 .nav-links {
@@ -27,5 +31,5 @@ body {
 }
 
 .nav-item-text {
-  @apply text-[17px] font-normal;
+  @apply text-[17px] font-medium;
 }
