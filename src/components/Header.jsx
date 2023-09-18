@@ -1,4 +1,5 @@
-import React from "react";
+import { navLinks } from "@/libs/constants";
+import ListItem from "./ListItem";
 
 export const Header = () => {
   return (
@@ -8,10 +9,9 @@ export const Header = () => {
       </div>
       <div>
         <ul className="nav-links">
-          <li className="nav-item">Home</li>
-          <li className="nav-item">About</li>
-          <li className="nav-item">Products</li>
-          <li className="nav-item">Contact</li>
+          {navLinks.map((item) => (
+            <ListItem url={item.url} key={item.id} title={item.title} />
+          ))}
         </ul>
       </div>
     </nav>
