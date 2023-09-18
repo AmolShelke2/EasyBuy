@@ -1,11 +1,14 @@
 import { navLinks } from "@/libs/constants";
 import ListItem from "./ListItem";
+import Link from "next/link";
 
 export const Header = () => {
   return (
     <nav className="navbar">
       <div className="logo-container">
-        <h1 className="logo">EasyBuy</h1>
+        <Link className="logo" href={"/"}>
+          EasyBuy
+        </Link>
       </div>
       <div>
         <ul className="nav-links">
