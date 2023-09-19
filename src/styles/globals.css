@@ -7,11 +7,11 @@ body {
 }
 
 .main-content {
-  @apply lg:max-w-[1400px] lg:mx-auto;
+  @apply px-4 lg:max-w-[1400px] lg:mx-auto;
 }
 
 .navbar {
-  @apply flex justify-between py-4;
+  @apply flex justify-between py-4 relative;
 }
 
 .logo-container {
@@ -23,7 +23,12 @@ body {
 }
 
 .nav-links {
-  @apply flex justify-center items-center gap-5;
+  @apply hidden md:flex justify-center items-center gap-5;
+}
+
+.nav-links.active {
+  @apply flex fixed left-4 top-16 shadow-sm px-2 lg:hidden flex-col 
+  justify-start items-start h-[400px] w-full;
 }
 
 .nav-item {
@@ -32,4 +37,8 @@ body {
 
 .nav-item-text {
   @apply text-[17px] font-medium;
+}
+
+.menu {
+  @apply fixed top-5 right-5 cursor-pointer md:hidden;
 }
