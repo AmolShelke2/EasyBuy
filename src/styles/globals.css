@@ -7,11 +7,11 @@ body {
 }
 
 .main-content {
-  @apply px-4 lg:max-w-[1400px] lg:mx-auto;
+  @apply px-4 w-full lg:mx-auto;
 }
 
 .navbar {
-  @apply flex justify-between py-4 relative;
+  @apply flex lg:max-w-[1400px] mx-auto justify-between py-4 relative;
 }
 
 .logo-container {
@@ -41,4 +41,12 @@ body {
 
 .menu {
   @apply fixed top-5 right-5 cursor-pointer md:hidden;
+}
+
+.image-container {
+  @apply h-[600px] w-full;
+}
+
+.banner-image {
+  @apply bg-cover bg-no-repeat h-full w-full transition-all duration-150;
 }

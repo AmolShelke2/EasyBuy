@@ -25,3 +25,11 @@ export const navLinks = [
     url: "/contact",
   },
 ];
+
+export const BannerCarousel = [
+  "/images/banner-1.png",
+
+  "/images/banner-2.png",
+
+  "/images/banner-3.png",
+];
