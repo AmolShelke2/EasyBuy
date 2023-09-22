@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-200 text-gray-500 h-full w-full;
+  @apply bg-[#1B262C] text-white h-full w-full scroll-smooth;
 }
 
 .main-content {
@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-  @apply flex lg:max-w-[1400px] mx-auto justify-between py-4 relative;
+  @apply flex sm:justify-around py-6 fixed top-0 left-0 px-4 bg-[#1b262c] w-full;
 }
 
 .logo-container {
@@ -19,7 +19,7 @@ body {
 }
 
 .navbar .logo {
-  @apply text-xl font-semibold tracking-wide text-gray-700;
+  @apply text-xl font-semibold tracking-wide text-white;
 }
 
 .nav-links {
@@ -27,8 +27,8 @@ body {
 }
 
 .nav-links.active {
-  @apply flex fixed left-4 top-16 shadow-sm px-2 lg:hidden flex-col 
-  justify-start items-start h-[400px] w-full;
+  @apply flex fixed left-0 top-20 right-2 shadow-sm px-4 py-4 lg:hidden flex-col 
+  justify-start items-start h-[400px] w-full transition-all duration-150 bg-black;
 }
 
 .nav-item {
@@ -40,7 +40,7 @@ body {
 }
 
 .menu {
-  @apply fixed top-5 right-5 cursor-pointer md:hidden;
+  @apply fixed top-7 right-5 cursor-pointer md:hidden;
 }
 
 .image-container {
@@ -49,4 +49,28 @@ body {
 
 .banner-image {
   @apply bg-cover bg-no-repeat h-full w-full transition-all duration-150;
+}
+
+.sub-content {
+  @apply flex flex-col justify-start items-start max-w-[1210px] my-6 mx-auto;
+}
+
+.category .subheading {
+  @apply text-lg sm:text-3xl font-bold text-white uppercase my-4 tracking-wider;
+}
+
+.category-wrapper {
+  @apply flex flex-col sm:flex-row justify-center items-center gap-4;
+}
+
+.category-wrapper .category-card {
+  @apply border border-white rounded-sm cursor-pointer relative sm:h-[350px] sm:w-[588px];
+}
+
+.category-card .category-image {
+  @apply h-full w-full;
+}
+
+.category-card .name {
+  @apply absolute top-12 left-8 text-black text-lg sm:text-3xl font-bold tracking-wide;
 }
