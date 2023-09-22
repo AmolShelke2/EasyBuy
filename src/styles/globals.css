@@ -2,12 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   @apply bg-[#1B262C] text-white h-full w-full scroll-smooth;
 }
 
 .main-content {
-  @apply px-4 w-full lg:mx-auto;
+  @apply w-full lg:mx-auto;
 }
 
 .navbar {
@@ -44,7 +50,7 @@ body {
 }
 
 .image-container {
-  @apply h-[600px] w-full;
+  @apply mt-16 sm:mt-2 h-[300px] sm:h-[600px] w-full;
 }
 
 .banner-image {
@@ -52,7 +58,7 @@ body {
 }
 
 .sub-content {
-  @apply flex flex-col justify-start items-start max-w-[1210px] my-6 mx-auto;
+  @apply flex flex-col justify-start items-start max-w-[1210px] my-6 mx-auto px-4;
 }
 
 .category .subheading {
