@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <title>Ecommerce app</title>
+      <title>EasyBuy | Buy quality products easily</title>
       <body>
         <Main />
         <NextScript />
