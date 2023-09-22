@@ -1,8 +1,8 @@
 import { navLinks } from "@/libs/constants";
 import ListItem from "./ListItem";
 import Link from "next/link";
-import { MdOutlineShoppingBag } from "react-icons/md";
-import { AiOutlineMenu } from "react-icons/ai";
+import { MdAbc, MdOutlineShoppingBag } from "react-icons/md";
+import { AiOutlineMenu, AiOutlineHeart } from "react-icons/ai";
 import { useState } from "react";
 
 export const Header = () => {
@@ -22,8 +22,14 @@ export const Header = () => {
             <ListItem url={item.url} key={item.id} title={item.title} />
           ))}
         </ul>
+        <div className="cart">
+          <MdOutlineShoppingBag size={25} className="icon" />
+        </div>
+        <div className="wishlist">
+          <AiOutlineHeart size={25} className="icon" />
+        </div>
         <div className="menu" onClick={() => setNavActive(!navActive)}>
-          <AiOutlineMenu size={20} />
+          <AiOutlineMenu size={25} />
         </div>
       </div>
     </nav>

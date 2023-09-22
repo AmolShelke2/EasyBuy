@@ -45,6 +45,18 @@ body {
   @apply text-[17px] font-medium;
 }
 
+.wishlist {
+  @apply fixed right-14 top-7 sm:right-8 sm:top-6 cursor-pointer;
+}
+
+.wishlist .icon {
+  @apply hover:text-red-400;
+}
+
+.cart {
+  @apply fixed right-24 top-7 sm:right-20 sm:top-6 cursor-pointer;
+}
+
 .menu {
   @apply fixed top-7 right-5 cursor-pointer md:hidden;
 }

@@ -7,20 +7,7 @@ export const Categories = () => {
     <div className="category">
       <h2 className="subheading">Categories</h2>
       <div className="category-wrapper">
-        <Link href={"/about"}>
-          <div className="category-card">
-            <Image
-              className="category-image"
-              src={"/images/categori-1.png"}
-              height={350}
-              width={500}
-              alt="category-1"
-            />
-            <h3 className="name">Women</h3>
-          </div>
-        </Link>
-
-        <Link href={"/about"}>
+        <Link href={"/about/mans"}>
           <div className="category-card">
             <Image
               className="category-image"
@@ -30,6 +17,19 @@ export const Categories = () => {
               alt="category-1"
             />
             <h3 className="name">Men</h3>
+          </div>
+        </Link>
+
+        <Link href={"/about/womens"}>
+          <div className="category-card">
+            <Image
+              className="category-image"
+              src={"/images/categori-1.png"}
+              height={350}
+              width={500}
+              alt="category-1"
+            />
+            <h3 className="name">Women</h3>
           </div>
         </Link>
       </div>
