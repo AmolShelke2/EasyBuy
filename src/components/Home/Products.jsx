@@ -13,6 +13,7 @@ export const Products = ({ products, productsToShow, onShowMoreClick }) => {
             height={50}
             width={50}
             alt="loader"
+            loading="lazy"
           />
         </div>
       ) : (

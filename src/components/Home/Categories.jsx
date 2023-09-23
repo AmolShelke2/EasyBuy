@@ -15,6 +15,7 @@ export const Categories = () => {
               height={350}
               width={500}
               alt="category-1"
+              loading="lazy"
             />
             <h3 className="name">Men</h3>
           </div>
@@ -28,6 +29,7 @@ export const Categories = () => {
               height={350}
               width={500}
               alt="category-1"
+              loading="lazy"
             />
             <h3 className="name">Women</h3>
           </div>

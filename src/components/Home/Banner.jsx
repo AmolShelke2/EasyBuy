@@ -23,6 +23,7 @@ export const Banner = () => {
           src={`/images/banner-${currentImg}.png`}
           alt="banner"
           className="banner-image"
+          loading="lazy"
         />
       </div>
     </section>

@@ -12,6 +12,7 @@ export const SpecificProduct = ({ product }) => {
           height={600}
           width={600}
           className="product-image"
+          loading="lazy"
         />
       </div>
       <div className="content-wrapper">

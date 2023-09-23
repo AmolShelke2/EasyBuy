@@ -14,6 +14,7 @@ export const SpecificProduct = ({ product }) => {
           alt="product-image"
           src={product.image}
           className="product-image"
+          loading="lazy"
         />
         <h3 className="title">{product.title.substring(0, 20)}..</h3>
         <p className="price">${product.price}</p>
