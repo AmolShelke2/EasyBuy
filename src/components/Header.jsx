@@ -1,7 +1,7 @@
 import { navLinks } from "@/libs/constants";
 import ListItem from "./ListItem";
 import Link from "next/link";
-import { MdAbc, MdOutlineShoppingBag } from "react-icons/md";
+import { MdOutlineShoppingBag } from "react-icons/md";
 import { AiOutlineMenu, AiOutlineHeart } from "react-icons/ai";
 import { useState } from "react";
 

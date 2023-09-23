@@ -96,3 +96,39 @@ body {
 .products .subheading {
   @apply text-lg sm:text-3xl font-bold text-white uppercase my-4 tracking-wider;
 }
+
+.products-wrapper {
+  @apply grid sm:grid-cols-3 grid-flow-row w-full;
+}
+
+.button {
+  @apply flex justify-center items-center my-4;
+}
+
+.show-more {
+  @apply bg-black text-white px-8 py-4 rounded-2xl text-lg shadow-sm;
+}
+
+.loader {
+  @apply flex justify-center items-center my-4;
+}
+
+.product-card {
+  @apply h-[350px] w-[340px] sm:w-[360px] bg-white text-black m-4 rounded-md shadow-sm mb-16 relative;
+}
+
+.product-card .product-image {
+  @apply h-full w-full object-contain cursor-pointer mb-2;
+}
+
+.product-card .title {
+  @apply text-lg text-white font-bold mb-1;
+}
+
+.product-card .price {
+  @apply text-white text-lg font-medium;
+}
+
+.product-card .icons {
+  @apply bg-gray-400 absolute top-2 text-white px-2 py-2 right-2 rounded-full cursor-pointer hover:text-red-400;
+}
