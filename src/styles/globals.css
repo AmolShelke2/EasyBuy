@@ -109,10 +109,6 @@ body {
   @apply bg-black text-white px-8 py-4 rounded-2xl text-lg shadow-sm;
 }
 
-.loader {
-  @apply flex justify-center items-center my-4;
-}
-
 .product-card {
   @apply h-[350px] w-[340px] sm:w-[360px] bg-white text-black m-4 rounded-md shadow-sm mb-16 relative;
 }
@@ -131,4 +127,40 @@ body {
 
 .product-card .icons {
   @apply bg-gray-400 absolute top-2 text-white px-2 py-2 right-2 rounded-full cursor-pointer hover:text-red-400;
+}
+
+/* specific product page */
+.specific-product {
+  @apply grid sm:grid-cols-2 gap-8 overflow-x-hidden;
+}
+
+.specific-product .image-container {
+  @apply h-[300px] w-[350px] sm:h-[600px] sm:w-[620px] py-4 mx-4;
+}
+
+.specific-product .image-container .product-image {
+  @apply h-[300px] w-[350px] sm:h-[580px] sm:w-[580px];
+}
+
+.specific-product .content-wrapper {
+  @apply sm:py-4 sm:mx-4;
+}
+.specific-product .content-wrapper h1 {
+  @apply text-3xl font-bold tracking-wide mb-3 sm:mb-6;
+}
+
+.specific-product .content-wrapper h3 {
+  @apply text-2xl text-gray-500 font-semibold mb-4;
+}
+
+.specific-product .content-wrapper p {
+  @apply text-lg w-[350px] sm:w-full text-gray-400 font-normal mb-6;
+}
+
+.btn-container {
+  @apply flex flex-row w-full gap-6;
+}
+
+.content-wrapper .product-button {
+  @apply bg-white text-black px-8 py-4 rounded-xl text-lg shadow-sm;
 }

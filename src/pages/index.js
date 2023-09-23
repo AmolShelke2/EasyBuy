@@ -1,7 +1,7 @@
-import { Banner } from "@/components/Banner";
-import { Categories } from "@/components/Categories";
+import { Banner } from "@/components/Home/Banner";
+import { Categories } from "@/components/Home/Categories";
 import { Header } from "@/components/Header";
-import { Products } from "@/components/Products";
+import { Products } from "@/components/Home/Products";
 
 import { useEffect, useState } from "react";
 

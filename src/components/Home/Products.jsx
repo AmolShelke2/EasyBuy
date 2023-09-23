@@ -6,13 +6,7 @@ export const Products = ({ products, productsToShow, onShowMoreClick }) => {
   return (
     <div className="products">
       <h2 className="subheading">Over Products</h2>
-      {products ? (
-        <div className="products-wrapper">
-          {products.slice(0, productsToShow).map((product) => (
-            <SpecificProduct key={product.id} product={product} />
-          ))}
-        </div>
-      ) : (
+      {!products ? (
         <div className="loader">
           <Image
             src={"/images/loader.gif"}
@@ -20,6 +14,12 @@ export const Products = ({ products, productsToShow, onShowMoreClick }) => {
             width={50}
             alt="loader"
           />
+        </div>
+      ) : (
+        <div className="products-wrapper">
+          {products.slice(0, productsToShow).map((product) => (
+            <SpecificProduct key={product.id} product={product} />
+          ))}
         </div>
       )}
       {products && products.length > productsToShow && (
