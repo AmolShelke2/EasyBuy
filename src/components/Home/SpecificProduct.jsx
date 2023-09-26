@@ -1,13 +1,13 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { AiOutlineHeart } from "react-icons/ai";
 import Link from "next/link";
 
 export const SpecificProduct = ({ product }) => {
   return (
-    <Link href={`/products/${product.id}`}>
-      <div className="product-card">
+    <div className="product-card">
+      <Link href={`/products/${product.id}`}>
         <Image
           height={400}
           width={400}
@@ -18,11 +18,11 @@ export const SpecificProduct = ({ product }) => {
         />
         <h3 className="title">{product.title.substring(0, 20)}..</h3>
         <p className="price">${product.price}</p>
+      </Link>
 
-        <div className="icons">
-          <AiOutlineHeart />
-        </div>
+      <div className="icons">
+        <AiOutlineHeart />
       </div>
-    </Link>
+    </div>
   );
 };
