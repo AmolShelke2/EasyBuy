@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { Products } from "@/components/Home/Products";
 
 import { useEffect, useState } from "react";
+import { Footer } from "@/components/Home/Footer";
 
 export default function Home() {
   const [products, setProducts] = useState(null);
@@ -35,6 +36,7 @@ export default function Home() {
           productsToShow={productsToShow}
           onShowMoreClick={handleShowMore}
         />
+        <Footer />
       </div>
     </main>
   );
